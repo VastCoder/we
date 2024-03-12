@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Order Status</title>
+</head>
+<body>
+    <div>
+        <h1>Get Order Status</h1>
+        <form action="{{ url_for('getprediction') }}" method="post">
+            <input type="text" name="email" placeholder="Email-ID" required="required" /><br>
+            <input type="text" name="phone" placeholder="Phone Number" required="required" /><br>
+            <button type="submit">Get Order Status</button>
+        </form>
+        <br>
+        <br>
+        {{ output }}
+    </div>
+</body>
+</html>
